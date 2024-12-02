@@ -1,0 +1,20 @@
+{
+  "name": "memory-app",
+  "version": "0.1.0",
+  "description": "Example app using Claude with the MCP Memory Server",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prestart": "npx -y @modelcontextprotocol/server-memory"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.17.1",
+    "dotenv": "^16.0.3",
+    "mcp-client": "file:../.."
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
